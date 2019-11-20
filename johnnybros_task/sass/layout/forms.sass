@@ -1,0 +1,53 @@
+.form 
+	position: relative 
+	float: left
+	width: 100%				
+		
+	.form__input	
+		@include font-primary 
+		float: left
+		width: calc(50% - 8px)
+		height: 42px			
+		padding: 0 0 0 0
+		color: rgba(0, 0, 0, 0.5)	
+		border: none
+		border-bottom: 1px solid rgba(0, 0, 0, 0.25)
+		background: #fff
+		font-weight: 400
+		font-size: 15px
+		line-height: 18px	
+		@media only screen and (max-width: $breakpoint-tablet)
+			width: 100%
+	
+	.form__input--name 
+		margin: 0 16px 0 0 !important
+		@media only screen and (max-width: $breakpoint-tablet)
+			margin: 0 0 15px 0 !important
+	
+	.form__input--email	 
+		margin: 0 0 0 0 !important
+		
+	.form__textarea 
+		@include font-primary 
+		float: left
+		width: 100%
+		max-width: 100%
+		height: 110px
+		max-height: 110px
+		margin: 25px 0 25px 0
+		padding: 20px 0 0 16px
+		border: 1px solid rgba(0, 0, 0, 0.25)
+		background: #f5f5f5
+		font-weight: 400
+		font-size: 15px
+		line-height: 18px			
+		box-sizing: border-box
+		-moz-box-sizing: border-box
+		-webkit-box-sizing: border-box	
+		border-radius: 2px
+		resize: none	
+	
+	.form__submit 
+		border: none
+		@media only screen and (max-width: $breakpoint-tablet)
+			width: 100%	

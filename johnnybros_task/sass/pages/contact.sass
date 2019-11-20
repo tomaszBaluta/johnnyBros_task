@@ -1,0 +1,56 @@
+.contact 
+	padding: 100px 0 95px 0
+	@media only screen and (max-width: $breakpoint-desktop)
+		padding: 10px 0 0px 0
+	@media only screen and (max-width: $breakpoint-tablet) 
+		padding: 0
+	
+	.container_contact__wrap 
+		@media only screen and (max-width: $breakpoint-tablet) 
+			width: 100%
+	
+	.block_photo 
+		position: relative
+		float: left
+		width: 555px
+		height: 420px
+		@media only screen and (max-width: $breakpoint-desktop)
+			width: 100%
+			height: 46.7vw
+		@media only screen and (max-width: $breakpoint-tablet) 
+			height: auto
+				
+		.block_photo__img 
+			width: 100%
+			height: 100%
+			object-fit: cover				
+			
+	.block_form 
+		position: relative
+		float: right
+		width: 585px
+		height: 420px	
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		@media only screen and (max-width: 1220px)
+			width: calc(100% - 60px)
+			margin: 60px 30px 70px 30px
+			height: auto
+		@media only screen and (max-width: $breakpoint-tablet)
+			width: calc(100% - 32px)
+			margin: 40px 16px 40px 16px
+		
+		.block_form__box 
+			position: relative 
+			float: left
+			width: 100%
+		
+			.block_form__h4 	
+				color: rgba(0, 0, 0, 0.5)	
+				letter-spacing: 0.15em
+				text-transform: uppercase
+
+			.block_form__h3
+				font-weight: 100
+				margin: 20px 0 20px 0

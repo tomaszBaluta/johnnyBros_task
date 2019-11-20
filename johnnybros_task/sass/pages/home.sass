@@ -1,0 +1,60 @@
+.home 
+	height: 720px
+	background: url('../assets/images/pp-main-background.jpg') center no-repeat
+	background-size: cover
+	@media only screen and (max-width: $breakpoint-desktop)
+		height: 620px
+	@media only screen and (max-width: $breakpoint-tablet)
+		height: 500px
+	
+	.home__wrap 
+		display: flex
+		justify-content: center
+		align-items: center
+		@media only screen and (max-width: $breakpoint-desktop)
+			width: 100%		
+		
+		.header 
+			position: relative
+			float: left
+			width: 800px
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			flex-wrap: wrap
+			margin: 18px 0 0 0
+			
+			.header__h4 
+				text-align: center
+				margin: 0 0 0 0
+				text-transform: uppercase
+				letter-spacing: 0.15em
+				font-weight: 700
+				width: 100%
+				
+			.header__h1 
+				text-align: center
+				margin: 15px 0 20px 0
+				font-weight: 500	
+				letter-spacing: -0.017em
+
+			.header__paragraph 
+				text-align: center
+				width: 82%
+				@media only screen and (max-width: $breakpoint-tablet) 
+					line-height: 22px
+			
+			.header__link 
+				margin: 50px 0 0 0
+								
+		.home__scroll-down
+			position: absolute
+			float: left
+			left: calc(50% - 18px)
+			bottom: 100px
+			z-index: 5
+			cursor: pointer
+			@media only screen and (max-width: $breakpoint-desktop)
+				bottom: 90px	
+			@media only screen and (max-width: $breakpoint-tablet) 
+				bottom: 35px	

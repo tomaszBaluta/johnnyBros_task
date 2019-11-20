@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Millunium-Medium';
+  src: url('Millunium-Medium.eot');
+  src: url('Millunium-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Millunium-Medium.svg#Millunium-Medium') format('svg'),
+       url('Millunium-Medium.ttf') format('truetype'),
+       url('Millunium-Medium.woff') format('woff'),
+       url('Millunium-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

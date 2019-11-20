@@ -1,0 +1,110 @@
+html, body 
+	height: 100%
+	color: #000
+	
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, ul, p, blockquote, pre, a, big, em, img, q, small, strong, tt, var, b, u, i, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td 
+	border: 0
+	margin: 0
+	outline: 0
+	padding: 0
+
+.container
+	position: relative
+	float: left
+	width: 100%
+
+.wrap 
+	position: relative
+	width: 1200px
+	height: 100%
+	margin: 0 auto
+	@media only screen and (max-width: $breakpoint-desktop)
+		width: calc(100% - 40px)
+	@media only screen and (max-width: $breakpoint-tablet)	
+		width: calc(100% - 16px)
+	
+.white 
+	color: #fff !important
+
+.black 
+	color: #000 !important
+
+.title_h1
+	@include font-secondary
+	font-size: 64px
+	line-height: 64px	
+	@media only screen and (max-width: $breakpoint-tablet) 
+		font-size: 38px
+		line-height: 38px			
+	
+.title_h2 
+	@include font-primary 
+	font-size: 48px
+	line-height: 56px		
+	@media only screen and (max-width: $breakpoint-tablet) 
+		font-size: 32px
+		line-height: 38px		
+
+.title_h3 
+	@include font-secondary
+	font-size: 32px
+	line-height: 38px	
+	@media only screen and (max-width: $breakpoint-tablet) 
+		font-size: 24px
+		line-height: 28px		
+
+.title_h4 
+	@include font-primary 
+	font-size: 18px
+	line-height: 22px		
+	@media only screen and (max-width: $breakpoint-tablet) 
+		font-size: 15px
+		line-height: 20px	
+	
+.title_h5 
+	@include font-primary 
+	font-size: 16px
+	line-height: 18px		
+	@media only screen and (max-width: $breakpoint-tablet) 
+		font-size: 15px
+		line-height: 16px		
+
+.paragraph 
+	@include font-primary 
+	font-weight: 400
+	font-size: 15px
+	line-height: 24px		
+	@media only screen and (max-width: $breakpoint-tablet) 
+		font-size: 14px
+		line-height: 18px	
+	
+.link 
+	@include font-primary 
+	width: 320px
+	height: 48px
+	background-color: #3FAE49
+	font-weight: 600
+	font-size: 16px
+	line-height: 19px	
+	text-align: center
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	text-decoration: none
+	cursor: pointer
+	-webkit-transition: all 0.3s ease-in-out
+	-moz-transition: all 0.3s ease-in-out
+	-o-transition: all 0.3s ease-in-out
+	transition: all 0.3s ease-in-out
+	border-radius: 2px
+	@media only screen and (max-width: $breakpoint-tablet) 
+		font-size: 15px
+		line-height: 18px	
+		height: 42px	
+		font-weight: 700
+		width: 270px
+
+	&:hover 
+		background-color: #fff
+		color: #3FAE49
